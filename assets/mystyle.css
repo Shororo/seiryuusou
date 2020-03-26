@@ -534,7 +534,7 @@ nav a:hover{
 #title img{
   position: absolute;
   height: 45%;
-  top: 70%;
+  top: 65%;
   left: 20%;
   transform: translate(-20%, -50%);
 }
