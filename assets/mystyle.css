@@ -704,14 +704,15 @@ nav a:hover{
 
 /*プロローグ*/
 .nozoki{
+  background-image: url("../images/genkan.jpg");
+  background-size: cover;
+  background-position: center center;
   height: 50rem;
-  background: linear-gradient(to bottom, white, #0000 30%, #0000 70%, white);
 }
-.nozoki img{
-  position: relative;
-  height: 100%;
+.contena-nozoki{
   width: 100%;
-  z-index: -1;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(255, 255, 255, 1));
 }
 /*プロローグここまで*/
 
