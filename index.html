@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Smooth_Slider CSS -->
   <link rel="stylesheet" href="assets/smooth_slider/smooth_slider.css" />
+  <!-- animate CSS -->
+  <link rel="stylesheet" href="assets/animate.css">
   <!-- MyCSS -->
   <link rel="stylesheet" href="assets/mystyle.css">
   
@@ -22,23 +24,22 @@
 
   <header>
     <div class="header-contents">
-      <a href="#"><img class="logo" src="material/header-logo.svg" alt="ヘッダーロゴ"></a>
-      <div class="height-100 float-right">
-          <a href="https://www.yadoken.jp/pg/FrontCtrlShowPlanRecommendation.php?hotel_id=yk104447"><img class="yoyaku" src="material/yoyaku.svg" alt="予約ボタン"></a>
-          <img class="navigation" src="material/navbar.svg" alt="ナビゲーションバー">
-      </div>
+      <a id="in-navigation" href="#"><img class="logo" src="material/header-logo.svg" alt="ヘッダーロゴ"></a>
+      <img class="navigation float-right" src="material/navbar.svg" alt="ナビゲーションバー">
+      <a id="yoyaku-button" href="https://www.yadoken.jp/pg/FrontCtrlShowPlanRecommendation.php?hotel_id=yk104447"><img class="yoyaku float-right" src="material/yoyaku.svg" alt="予約ボタン"></a>
     </div>
   </header>
 
+  <a id="yoyaku-button2" href="https://www.yadoken.jp/pg/FrontCtrlShowPlanRecommendation.php?hotel_id=yk104447"><img class="yoyaku float-right" src="material/yoyaku.svg" alt="予約ボタン"></a>
+
   <nav>
     <ul>
-      <li><a href="#">トップ</a></li>
-      <li><a href="#id1">清流荘について</a></li>
-      <li><a href="#id2">温泉</a></li>
-      <li><a href="#id3">お部屋</a></li>
-      <li><a href="#id4">お食事</a></li>
-      <li><a href="#id5">施設案内</a></li>
-      <li><a href="#id5">基本情報</a></li>
+      <li><a href="#about-seiryuusou">清流荘について</a></li>
+      <li><a href="#onsen">温泉</a></li>
+      <li><a href="#oheya">お部屋</a></li>
+      <li><a href="#oshokuzi">お食事</a></li>
+      <li><a href="#annai">施設案内</a></li>
+      <li><a href="#kihon">基本情報</a></li>
     </ul>
   </nav>
 
@@ -52,23 +53,442 @@
   </div>
   <!-- タイトル画面ここまで -->
 
+  <div id="prologue" class="text-center clr-blue">
+    <div class="pt-10 bg-white">
+      <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+        <p>木漏れ陽の道をぬけると</p>
+        <p>木立ちの中でひっそりとたたずむ</p>
+        <p>どこかなつかしい宿が迎えてくれる。</p>
+        <div class="ptb-10">
+          <p>木立ちの中の宿</p>
+          <p>清流荘</p>
+        </div>
+      </div>
+    </div>
+    <div class="nozoki">
+      <img src="images/genkan.jpg" align="清流荘玄関">
+    </div>
+    <div class="pb-15 bg-white"></div>
+  </div>
+
+  <div id="main" class="clr-white">
+    <div id="about-seiryuusou">
+      <div class="pt-10 pb-15 bg-blue">
+        <div class="midasi midasi1">
+          <div class="contena-blue">
+              <h1 class="text-center d-shadow clr-white border-white">清流荘について</h1>
+          </div>
+        </div>
+        <div class="width-90">
+          <div class="pt-10 text-center">
+            <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+              <p>熊本県菊池市にある旅館清流荘。</p>
+              <p>温泉街から少し離れた</p>
+              <p>閑静な場所に位置しています。</p>
+              <div class="pt-5-5">
+                <p>木花に囲まれ、清流の音を聞き、</p>
+                <p>ゆっくりとした時間を</p>
+                <p>お過ごしください。</p>
+              </div>
+            </div>
+            <div class="col-sm col-md">
+              <div class="grid-pictures pt-10">
+                <div class="d-flex">
+                  <div class="col-12">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                      <img src="images/onsen03.png" alt="写真">
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                      <img src="images/kasikiri-gaikan01.jpg" alt="写真">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                      <img src="images/irori.jpg" alt="写真">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="onsen">
+      <div class="pt-10 pb-15 bg-white clr-blue">
+        <div class="midasi midasi2">
+          <div class="contena-white">
+            <h1 class="text-center d-shadow-white clr-blue border-blue">温泉</h1>
+          </div>
+        </div>
+        <div class="width-90">
+          <div class="pt-10 text-center">
+            <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+            <p>4つの大浴場に</p>
+            <p>12室の貸切家族風呂。</p>
+            <div class="pt-5-5">
+              <p>肌触りの良い瀞みのある温泉を</p>
+              <p>心行くまでご堪能ください。</p>
+            </div>
+          </div>
+            <div class="spacer-768"></div>
+            <div class="pt-10 text-left">
+              <h2 class="mb-6 border-blue">大浴場</h2>
+              <div class="d-flex">
+                <div class="col-12 col-md-6 order-md-0">
+                  <div class="p-1 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                    <img src="images/onsen-maboro.jpg" alt="清流荘温泉">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-8 mb-md-0 order-md-1">
+                  <div class="box-center-768">
+                    <div class="p-1 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                      <h3 class="pt-5 pt-md-0">岩風呂「まほろばの湯」</h3>
+                      <div class="pt-2-5">
+                        <p>脱衣所から戸を開けると、</p>
+                        <p>あっという別世界の大岩が</p>
+                        <p>むきだしにそそり立っています。</p>
+                        <p>雄大なお風呂を堪能してください。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 spacer-768 order-md-2"></div>
+                <div class="col-12 col-md-6 order-md-4">
+                  <div class="p-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <img src="images/onsen-hotaru.jpg" alt="清流荘温泉">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-8 mb-md-0 order-md-3">
+                  <div class="box-center-768">
+                    <div class="p-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                      <h3 class="pt-5 pt-md-0">露天風呂「ほたるの湯」</h3>
+                      <div class="pt-2-5">
+                        <p>清流を見下ろしながら温まる</p>
+                        <p>自然をモチーフにした露天風呂です。</p>
+                        <p>親子で2年の月日をかけて作った</p>
+                        <p>自慢の手造り露天風呂です。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 spacer-768 order-md-5"></div>
+                <div class="col-12 col-md-6 order-md-6">
+                  <div class="p-1 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                    <img src="images/onsen-omoide.jpg" alt="清流荘温泉">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-8 mb-md-0 order-md-7">
+                  <div class="box-center-768">
+                    <div class="p-1 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                      <h3 class="pt-5 pt-md-0">岩風呂「思い出の湯」</h3>
+                      <div class="pt-2-5">
+                        <p>昔を想い浮かべながら入るお風呂です。</p>
+                        <p>自分の世界でゆっくりと川音を聞き、</p>
+                        <p>木々を見て心を癒す露天風呂です。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 spacer-768 order-md-8"></div>
+                <div class="col-12 col-md-6 order-md-10">
+                  <div class="p-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <img src="images/onsen-hibiki.jpg" alt="清流荘温泉">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-15 mb-md-0 order-md-9">
+                  <div class="box-center-768">
+                    <div class="p-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                      <h3 class="pt-5 pt-md-0">露天風呂「ひびきの湯」</h3>
+                      <div class="pt-2-5">
+                        <p>湯の音が浴場内に気持ちよく響きます。</p>
+                        <p>すべすべしたお湯が身体全体に</p>
+                        <p>降りそそぎます。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 spacer-768-big order-md-11"></div>
+              <h2 class="mb-6 border-blue">貸切家族風呂「湯の倉」</h2>
+              <div class="d-flex">
+                <div class="col-12 col-md-6">
+                  <div class="box-center-768">
+                    <div class="p-1 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                      <div class="mb-6 mb-md-0">
+                        <p>岩風呂、檜風呂、石風呂など、</p>
+                        <p>それぞれ雰囲気の異なるつくり。</p>
+                        <p>お好きなタイプのお部屋を</p>
+                        <p>お選びいただけます。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-5 mb-md-0">
+                  <div class="p-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <img src="images/kasikiri-iwa.jpg" alt="清流荘温泉">
+                  </div>
+                </div>
+                <div class="col-12 spacer-768"></div>
+                <div class="col-12 col-md-6 mb-5 mb-md-0">
+                  <div class="p-1 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                    <img src="images/kasikiri-hinoki.jpg" alt="清流荘温泉">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-5 mb-md-0">
+                  <div class="p-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <img src="images/kasikiri-isi.jpg" alt="清流荘温泉">
+                  </div>
+                </div>
+                <div class="col-12 spacer-768 order-md-8"></div>
+              </div>
+              <p class="button-center bg-white clr-blue d-none">全てのお風呂を見る<i class="fas fa-angle-double-right ml-1" aria-hidden="true"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="oheya">
+        <div class="pt-10 pb-15 bg-blue">
+          <div class="midasi midasi3">
+            <div class="contena-blue">
+              <h1 class="text-center d-shadow clr-white border-white">お部屋</h1>
+            </div>
+          </div>
+          <div class="width-90">
+            <div class="ptb-10 text-center">
+              <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+              <p>和の趣を感じる、</p>
+              <p>和室6~10畳のお部屋。</p>
+              <div class="pt-5-5">
+                <p>畳の上で足をのばし</p>
+                <p>ゆるりとお寛ぎください。</p>
+              </div>
+            </div>
+            </div>
+            <div class="grid-pictures">
+              <div class="d-flex">
+                <div class="col-12">
+                  <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                  <img src="images/heya02.jpg" alt="写真">
+                </div>
+                </div>
+                <div class="col-4">
+                  <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                  <img src="images/heya04.jpg" alt="写真">
+                </div>
+                </div>
+                <div class="col-8">
+                  <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                  <img src="images/heya03.jpg" alt="写真">
+                </div>
+                </div>
+                <div class="col-12">
+                  <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                  <img src="images/heya05.jpg" alt="写真">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="oshokuzi">
+        <div class="pt-10 pb-15 bg-white clr-blue">
+          <div class="midasi midasi4">
+            <div class="contena-white">
+              <h1 class="text-center d-shadow-white clr-blue border-blue">お食事</h1>
+            </div>
+          </div>
+          <div class="width-90">
+            <div class="ptb-10 text-center">
+              <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+              <p>四季折々、</p>
+              <p>館主が自ら採った山菜をはじめ、</p>
+              <p>厳選した素材を調理いたします。</p>
+              <div class="pt-5-5">
+                <p>“温かいものは温かく―”</p>
+                <p>まごころ込めてゆっくりと</p>
+                <p>お出しいたします。</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-sm col-md">
+              <div class="grid-pictures">
+                <div class="d-flex">
+                  <div class="col-12">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                    <img src="images/shokuzi07.jpg" alt="写真">
+                  </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                    <img src="images/shokuzi04.jpg" alt="写真">
+                  </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                    <img src="images/shokuzi05.jpg" alt="写真">
+                  </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                    <img src="images/shokuzi06.jpg" alt="写真">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="annai">
+        <div class="pt-10 pb-15 bg-blue">
+          <div class="midasi midasi5">
+            <div class="contena-blue">
+              <h1 class="text-center d-shadow clr-white border-white">施設案内</h1>
+            </div>
+          </div>
+          <div class="width-90">
+            <div class="ptb-10 text-center">
+              <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+              <p>団体様用の大広間、</p>
+              <p>お土産売り場なども充実。</p>
+              <div class="pt-5-5">
+                <p>中庭では囲炉裏や足湯を</p>
+                <p>ご堪能いただけます。</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-sm col-md">
+              <div class="grid-pictures">
+                <div class="d-flex">
+                  <div class="col-12">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                    <img class="img-fluid" src="images/oohiroma.jpg" alt="写真">
+                  </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                    <img class="img-fluid" src="images/irori02.jpg" alt="写真">
+                  </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                    <img class="img-fluid" src="images/omiyage.jpg" alt="写真">
+                  </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="p-1 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                    <img class="img-fluid" src="images/asiyu.jpeg" alt="写真">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div id="kihon">
+        <div class="pt-10 pb-15 bg-white clr-blue">
+          <div class="midasi midasi6">
+            <div class="contena-white">
+              <h1 class="text-center d-shadow-white clr-blue border-blue">基本情報</h1>
+            </div>
+          </div>
+          <div class="width-90">
+            <div class="pt-10 text-left">
+              <p>営業時間<i class="fas fa-clock"></i></p>
+              <p class="ml-5 mb-6">10時〜22時(最終受付)　閉店23時</p>
+              <p>駐車場<i class="fas fa-parking"></i></p>
+              <p class="ml-5 mb-6">有(止めれる台数あれば尚良)</p>
+              <p>客室/収容人数<i class="fas fa-user-alt"></i></p>
+              <p class="ml-5 mb-6">和室15室/50名</p>
+              <p>宴会場/収容人数<i class="fas fa-glass-cheers"></i></p>
+              <p class="ml-5">・清流の間/80名</p>
+              <p class="ml-5">・水城の間/20名</p>
+              <p class="ml-5 mb-6">・すみれの間/12名</p>
+              <p>ご宿泊予約<i class="fas fa-bed"></i></p>
+              <p class="ml-5 mb-6"><a class="clr-blue border-blue" href="https://www.yadoken.jp/pg/FrontCtrlShowPlanRecommendation.php?hotel_id=yk104447">予約ページへ<i class="fas fa-angle-double-right ml-1" aria-hidden="true"></i></a></p>
+              <p>温泉入浴のみ料金<i class="fas fa-water"></i></p>
+              <p class="ml-5 mb-6">600円/1人</p>
+              <p>貸切家族風呂料金<i class="fas fa-water"></i></p>
+              <p class="ml-5 mb-6">1500円/1室(50分)</p>
+              <p>住所<i class="fas fa-home"></i></p>
+              <p class="ml-5">〒861-1331</p>
+              <p class="ml-5">熊本県菊池市大字隈府 1587-17</p>
+              <!-- グーグルマップ -->
+              <div class="mb-6">
+                <div class="gmap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13385.801750794322!2d130.80460833100884!3d32.991898094520394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540e2bc92ea67a1%3A0xf759eb8ddd105b44!2z5riF5rWB6I2Y!5e0!3m2!1sja!2sjp!4v1585128720645!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+              </div>
+              <p>お問い合わせ<i class="fas fa-phone-alt"></i></p>
+              <p class="ml-5"><a class="clr-blue border-blue" href="tel:0968-24-2155">0968-24-2155</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="bg-blue clr-white">
+      <div class="text-center text-white">
+        <div class="width-90">
+          <div class="ptb-7">
+            <div class="d-flex">
+              <div class="col-md-6">
+                <div class="box-center-768 d-md-block">
+            <img src="material/logo-center-white.svg" alt="フッターロゴ">
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ptb-7">
+              <ul>
+                <li><a href="#about-seiryuusou">清流荘について</a></li>
+                <li><a href="#onsen">温泉</a></li>
+                <li><a href="#oheya">お部屋</a></li>
+                <li><a href="#oshokuzi">お食事</a></li>
+                <li><a href="#annai">施設案内</a></li>
+                <li><a href="#kihon">基本情報</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+            <hr>
+            <p class="text-center"><small>&copy; 2020 木立ちの中の宿　清流荘</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- フッターここまで -->
 
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <!-- Smooth_Slider JS -->
+    <script src="assets/smooth_slider/smooth_slider.js"></script>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- inview JS -->
+    <script src="assets/inview/jquery.inview.min.js"></script>
 
-  <!-- Smooth_Slider JS -->
-  <script src="assets/smooth_slider/smooth_slider.js"></script>
+    <!-- WOW JS -->
+    <script src="assets/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
-  <!-- inview JS -->
-  <script src="assets/inview/jquery.inview.min.js"></script>
-
-  <!-- myJS -->
-  <script src="assets/myscript.js"></script>
-</body>
-</html>
+    <!-- myJS -->
+    <script src="assets/myscript.js"></script>
+  </body>
+  </html>

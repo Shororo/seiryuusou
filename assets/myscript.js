@@ -31,8 +31,8 @@ $(window).resize(function() {
      $(".nav-cover").slideUp();
    } else {
      // ターゲット要素をクリックした時の操作
-     $("nav").slideToggle();
-     $(".nav-cover").slideToggle();
+     $("nav:not(:animated)").slideToggle();
+     $(".nav-cover:not(:animated)").slideToggle();
    }
  });
 	//スマホ用navここまで
@@ -41,7 +41,7 @@ $(window).resize(function() {
   //720pxより大きい時の処理
   
   	//navをheaderの中に入れる
-  	$("nav").insertAfter("#mobile-header");
+  	$("nav").insertAfter("#in-navigation");
 
     //画面をクリックするとheaderが隠れる
     $(document).on('click',function() {
