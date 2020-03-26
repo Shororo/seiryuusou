@@ -731,7 +731,7 @@ nav a:hover{
 
 /*温泉*/
 #onsen img{
-  height: 23rem;
+  height: 20rem;
   width: 100%;
 }
 /*温泉ここまで*/
@@ -773,6 +773,10 @@ hr{
 
 /*レスポンシブ*/
 @media (min-width: 576px) {
+  #onsen img{
+    height: 23rem;
+    width: 100%;
+  }
   /*グリッドピクチャーズ*/
   .grid-pictures img{
     height: 30rem !important;
