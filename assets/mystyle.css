@@ -403,7 +403,7 @@ nav{
   display: none;
   width: 100%;
   position: fixed;
-  top: 8.5vh;
+  top: 7rem;
   z-index:998;
   /* 任意のナビゲーションカラー */
   background-color: rgba(0, 11, 40, 0.9);
@@ -423,7 +423,7 @@ nav a:hover{
 .nav-cover{
   display: none;
   position: fixed;
-  top: 8.5vh;
+  top: 7rem;
   background-color: rgba(0, 11, 40, 0.3);
   /* 画像を表示させたい時用 */
   background-size: cover;
