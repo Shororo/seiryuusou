@@ -56,8 +56,8 @@ $(window).resize(function() {
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/genkan.jpg': 'center',
 							'images/onsen.jpg': 'center',
+							'images/kawa.jpg': 'center',
 							'images/toumorokosi02.jpg': 'center',
 							'images/onsen03.png': 'center'
 						},
