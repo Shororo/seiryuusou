@@ -320,13 +320,8 @@ img {
 .d-shadow-white{
   filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(255, 255, 255, 1));
 }
-.bg-orange{
-  background-image: url(../material/yakitori_kabegami.png);
-  background-repeat: repeat;
-}
 .bg-white{
-  background-image: url(../material/kabegami02.png);
-  background-repeat: repeat;
+  
 }
 .bg-black{
   background-color: #091321;
@@ -772,6 +767,34 @@ hr{
 }
 /*フッターここまで*/
 
+/*セクチョンデザイン*/
+#about-seiryuusou, #onsen, #oshokuzi, #oheya, #annai, #kihon, #prologue{
+  position: relative;
+}
+.section-design{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 10rem !important;
+  width: auto !important;
+  transform: translateX(-50%);
+}
+#section-design-onsen{
+  position: relative;
+  height: 15rem;
+  width: 100%;
+
+}
+#section-design-onsen img{
+  position: absolute;
+  height: 100% !important;
+  width: auto !important;
+  top: 0;
+  right: 0;
+
+}
+/*セクチョンデザインここまで*/
+
 /*レスポンシブ*/
 @media (min-width: 576px) {
   #onsen img{
@@ -779,6 +802,11 @@ hr{
     width: 100%;
   }
   /*グリッドピクチャーズ*/
+  .grid-pictures{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .grid-pictures img{
     height: 30rem !important;
     width: 100% !important;
@@ -793,6 +821,11 @@ hr{
   padding-right: 1.7rem;
   padding-left: 1.7rem;
 }
+.grid-pictures{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .grid-pictures img{
     height: 32rem !important;
     width: 100% !important;
@@ -824,17 +857,31 @@ hr{
     padding: 1rem !important;
   }
 .grid-pictures{
-    width: 750px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
+/*セクションデザイン*/
+  #section-design-onsen{
+  position: relative;
+  height: 25rem;
+  width: 100%;
+}
+#section-design-onsen img{
+  position: absolute;
+  height: 100% !important;
+  width: auto !important;
+  top: 0;
+  right: 0;
+}
+/*セクチョンデザインここまで*/
 }
 @media (min-width: 900px){
   .width-90{
     width: 900px;
   }
   .grid-pictures{
-    width: 900px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -845,7 +892,7 @@ hr{
   }
   /*温泉*/
   #onsen img{
-    height: 23rem;
+    height: 30rem;
     width: 100%;
   }
   /*温泉ここまで*/
